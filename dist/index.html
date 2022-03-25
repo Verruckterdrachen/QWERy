@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220325111312">
+	<link rel="stylesheet" href="css/style.min.css">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<meta name="description" content="QWERy - discover wonderful Indonesia">
 	<title>QWERy</title>
 </head>
 
@@ -30,7 +31,7 @@
 				</nav>
 			</div>
 			<form class="header__form" data-da=".header__menu,767.98,first">
-				<button class="header__search" type="submit">
+				<button class="header__search" type="submit" aria-label="search">
 					<svg>
 						<use xlink:href="img/icons/icons.svg#search"></use>
 					</svg>
@@ -89,7 +90,7 @@
 					<div class="info__container swiper-slide__body">
 						<div class="info__body half-block">
 							<div class="half-block__img ibg">
-								<picture><source srcset="img/info/bg.webp" type="image/webp"><img src="img/info/bg.jpg" alt="girl on the background of mountains"></picture>
+								<img src="img/info/bg.jpg" alt="girl on the background of mountains">
 							</div>
 							<div class="half-block__content" data-swiper-parallax="-15%" data-swiper-parallax-opacity="0">
 								<h2 class="half-block__title section-title">east nusa tenggara</h2>
@@ -119,20 +120,7 @@
 											<use xlink:href="img/icons/icons.svg#arrow-down"></use>
 										</svg>
 									</a>
-									<div class="slide-about__background" style="background-image: url('img/bg.jpg');" data-swiper-parallax="25%">
-									</div>
-								</div>
-								<div class="slider-about__slide slide-about swiper-slide">
-									<h2 class=" slide-about__title section-title section-title--double">Bromo</h2>
-									<div class="slide-about__subtitle section-subtitle">Steady your steps, we will climb together!</div>
-									<p class="slide-about__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</p>
-									<a href="#" class="slide-about__link section-link">
-										<span>read more</span>
-										<svg>
-											<use xlink:href="img/icons/icons.svg#arrow-down"></use>
-										</svg>
-									</a>
-									<div class="slide-about__background" style="background-image: url('img/culture/bg.jpg');" data-swiper-parallax="25%">
+									<div class="slide-about__background" style="background-image: url('img/about/bg.jpg');" data-swiper-parallax="25%">
 									</div>
 								</div>
 								<div class="slider-about__slide slide-about swiper-slide">
@@ -148,14 +136,27 @@
 									<div class="slide-about__background" style="background-image: url('img/info/bg.jpg');" data-swiper-parallax="25%">
 									</div>
 								</div>
+								<div class="slider-about__slide slide-about swiper-slide">
+									<h2 class=" slide-about__title section-title section-title--double">Bromo</h2>
+									<div class="slide-about__subtitle section-subtitle">Steady your steps, we will climb together!</div>
+									<p class="slide-about__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</p>
+									<a href="#" class="slide-about__link section-link">
+										<span>read more</span>
+										<svg>
+											<use xlink:href="img/icons/icons.svg#arrow-down"></use>
+										</svg>
+									</a>
+									<div class="slide-about__background" style="background-image: url('img/bg.jpg');" data-swiper-parallax="25%">
+									</div>
+								</div>
 							</div>
 							<div class="slider-about__arrows">
-								<button class="slider-about__arrow swiper-button-prev">
+								<button class="slider-about__arrow swiper-button-prev" aria-label="Previous slide">
 									<svg>
 										<use xlink:href="img/icons/icons.svg#arrow-right"></use>
 									</svg>
 								</button>
-								<button class="slider-about__arrow swiper-button-next">
+								<button class="slider-about__arrow swiper-button-next" aria-label="Next slide">
 									<svg>
 										<use xlink:href="img/icons/icons.svg#arrow-right"></use>
 									</svg>
@@ -168,7 +169,7 @@
 					<div class="culture__container swiper-slide__body">
 						<div class="culture__body half-block half-block--reverse">
 							<div class="half-block__img ibg">
-								<picture><source srcset="img/culture/bg.webp" type="image/webp"><img src="img/culture/bg.jpg" alt="two smiling girls"></picture>
+								<img src="img/culture/bg.jpg" alt="two smiling girls">
 							</div>
 							<div class="half-block__content" data-swiper-parallax="-15%" data-swiper-parallax-opacity="0">
 								<h2 class="half-block__title section-title">indonesian culture</h2>
@@ -198,8 +199,8 @@
 								<div class="footer__title">Let's go on vacation, Make your day</div>
 								<form action="#" class="form" data-form="form">
 									<label for="email" class="form__label visually-hidden">E-mail:</label>
-									<input type="email" class="form__input" name="email" placeholder="Email address" data-validate data-error="Invalid email">
-									<button type="submit" class="form__button">
+									<input id="email" type="email" class="form__input" name="email" placeholder="Email address" data-validate data-error="Invalid email">
+									<button type="submit" class="form__button" aria-label="Send data">
 										<svg>
 											<use xlink:href="img/icons/icons.svg#arrow-right"></use>
 										</svg>
@@ -281,7 +282,7 @@
 	</div>
 </div>
 	</div>
-	<script src="js/main.min.js?_v=20220325111312"></script>
+	<script src="js/main.min.js"></script>
 </body>
 
 </html>
