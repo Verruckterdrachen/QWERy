@@ -192,7 +192,6 @@
 		margin: 0 rem(-15) rem(30);
 		img {
 			object-position: bottom;
-			filter: brightness(0.75) sepia(0.3);
 		}
 		@media (min-width: em(1060)) {
 			flex-shrink: 0;
