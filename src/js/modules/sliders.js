@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
 
 function sliders() {
 	if (document.querySelector('.slider-about')) {
-		const aboutSlider = new Swiper('.slider-about', {
+		new Swiper('.slider-about', {
 			modules: [Navigation, Parallax],
 			observer: true,
 			observeParents: true,
@@ -55,14 +55,8 @@ function sliderScroll() {
 				},
 				slideChange: function () {
 					menuSliderRemove();
-					const header = document.querySelector('.header');
-					if (pageSlider.realIndex > 0) {
-						if (pageSlider.realIndex < menuLinks.length + 1) {
-							menuLinks[pageSlider.realIndex - 1].classList.add('active');
-						}
-						header.classList.add('scroll');
-					} else {
-						header.classList.remove('scroll');
+					if ((pageSlider.realIndex > 0) && (pageSlider.realIndex < menuLinks.length + 1)) {
+						menuLinks[pageSlider.realIndex - 1].classList.add('active');
 					}
 				},
 				resize: function () {

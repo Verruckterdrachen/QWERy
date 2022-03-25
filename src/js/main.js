@@ -75,4 +75,4 @@ import "./modules/sliders.js";
 //================================================================================
 
 // Свои скрипты
-// import "./modules/script.js";
+import "./modules/script.js";

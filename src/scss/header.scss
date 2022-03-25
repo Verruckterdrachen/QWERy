@@ -4,18 +4,10 @@
 	z-index: 9;
 	position: fixed;
 	width: 100%;
-	transition: background-color 0.3s;
-	&.scroll {
+	background-color: rgba(#000, 0.9);
+	@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
 		backdrop-filter: blur(1rem);
-		background-color: rgba(#000, 0.8);
-		.header__body {
-			min-height: rem(60);
-		}
-		.menu {
-			&::before {
-				height: rem(60);
-			}
-		}
+		background-color: rgba(#000, 0.75);
 	}
 	// .header__body
 	&__body {
@@ -23,10 +15,7 @@
 		align-items: center;
 		padding: rem(5) 0;
 		transition: min-height 0.3s;
-		min-height: rem(158);
-		@media (max-width: $pc) {
-			min-height: rem(80);
-		}
+		min-height: rem(80);
 		@media (max-width: $mobile) {
 			min-height: rem(60);
 		}
